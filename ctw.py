@@ -33,7 +33,15 @@ def test(num_of_bits):
     except StopIteration:
         pass
 
+    print(len(frames.items()))
+
     return HH/8.0
 
+HH = test(16)
+
+print(HH)
+
+"""
 HH, ws = min([(test(ws), ws) for ws in range(1,33)])
 print(f"HH {HH} for window size {ws}")
+"""
